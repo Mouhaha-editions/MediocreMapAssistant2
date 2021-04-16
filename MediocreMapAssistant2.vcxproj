@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{476F4092-D227-4A93-ADC6-D9AC4AB77FDB}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="intermediate\build\win64\ue4editor\inc\mediocremapassistant2\BPFileIO.gen.cpp" />
+    <ClCompile Include="intermediate\build\win64\ue4editor\inc\mediocremapassistant2\ColorConverter.gen.cpp" />
+    <ClCompile Include="intermediate\build\win64\ue4editor\inc\mediocremapassistant2\FileDownloader.gen.cpp" />
+    <ClCompile Include="intermediate\build\win64\ue4editor\inc\mediocremapassistant2\MediocreMapAssistant2.init.gen.cpp" />
+    <ClCompile Include="intermediate\build\win64\ue4editor\inc\mediocremapassistant2\MMServerRequest.gen.cpp" />
+    <ClCompile Include="intermediate\build\win64\ue4editor\inc\mediocremapassistant2\RegReader.gen.cpp" />
+    <ClCompile Include="intermediate\build\win64\ue4editor\inc\mediocremapassistant2\RenderWaveform.gen.cpp" />
+    <ClCompile Include="intermediate\build\win64\ue4editor\inc\mediocremapassistant2\Updater.gen.cpp" />
+    <ClCompile Include="plugins\discordrpc\intermediate\build\win64\ue4editor\development\discordrpc\Module.DiscordRpc.cpp" />
+    <ClCompile Include="plugins\discordrpc\intermediate\build\win64\ue4editor\development\discordrpc\Module.DiscordRpc.gen.cpp" />
+    <ClCompile Include="plugins\discordrpc\intermediate\build\win64\ue4editor\inc\discordrpc\DiscordRpc.init.gen.cpp" />
+    <ClCompile Include="plugins\discordrpc\intermediate\build\win64\ue4editor\inc\discordrpc\DiscordRpcBlueprint.gen.cpp" />
+    <ClCompile Include="plugins\discordrpc\source\discordrpc\private\DiscordRpc.cpp" />
+    <ClCompile Include="plugins\discordrpc\source\discordrpc\private\DiscordRpcBlueprint.cpp" />
+    <ClCompile Include="plugins\exisoundvis\intermediate\build\win64\ue4editor\development\exisoundvis\Module.eXiSoundVis.cpp" />
+    <ClCompile Include="plugins\exisoundvis\intermediate\build\win64\ue4editor\development\exisoundvis\Module.eXiSoundVis.gen.cpp" />
+    <ClCompile Include="plugins\exisoundvis\intermediate\build\win64\ue4editor\inc\exisoundvis\eXiSoundVis.init.gen.cpp" />
+    <ClCompile Include="plugins\exisoundvis\intermediate\build\win64\ue4editor\inc\exisoundvis\SoundVisComponent.gen.cpp" />
+    <ClCompile Include="plugins\exisoundvis\source\exisoundvis\private\AudioDecompressWorker.cpp" />
+    <ClCompile Include="plugins\exisoundvis\source\exisoundvis\private\eXiSoundVis.cpp" />
+    <ClCompile Include="plugins\exisoundvis\source\exisoundvis\private\SoundVisComponent.cpp" />
+    <ClCompile Include="plugins\pluginpackaged\intermediate\build\win64\ue4editor\development\victoryumg\Module.VictoryUMG.cpp" />
+    <ClCompile Include="plugins\pluginpackaged\intermediate\build\win64\ue4editor\development\victoryumg\Module.VictoryUMG.gen.cpp" />
+    <ClCompile Include="plugins\pluginpackaged\intermediate\build\win64\ue4editor\inc\victoryumg\JoyColorWheel.gen.cpp" />
+    <ClCompile Include="plugins\pluginpackaged\intermediate\build\win64\ue4editor\inc\victoryumg\VictoryUMG.init.gen.cpp" />
+    <ClCompile Include="plugins\pluginpackaged\source\victoryumg\private\JoyColorWheel.cpp" />
+    <ClCompile Include="plugins\pluginpackaged\source\victoryumg\private\VictoryUMGModule.cpp" />
+    <ClCompile Include="plugins\socketer\intermediate\build\win64\ue4editor\development\socketer\Module.Socketer.cpp" />
+    <ClCompile Include="plugins\socketer\intermediate\build\win64\ue4editor\development\socketer\Module.Socketer.gen.cpp" />
+    <ClCompile Include="plugins\socketer\intermediate\build\win64\ue4editor\inc\socketer\Socket.gen.cpp" />
+    <ClCompile Include="plugins\socketer\intermediate\build\win64\ue4editor\inc\socketer\Socketer.init.gen.cpp" />
+    <ClCompile Include="plugins\socketer\intermediate\build\win64\ue4editor\inc\socketer\SocketerBPLibrary.gen.cpp" />
+    <ClCompile Include="plugins\socketer\source\socketer\private\Socket.cpp" />
+    <ClCompile Include="plugins\socketer\source\socketer\private\Socketer.cpp" />
+    <ClCompile Include="plugins\socketer\source\socketer\private\SocketerBPLibrary.cpp" />
+    <ClCompile Include="plugins\victoryplugin\intermediate\build\win64\ue4editor\development\victorybplibrary\Module.VictoryBPLibrary.cpp" />
+    <ClCompile Include="plugins\victoryplugin\intermediate\build\win64\ue4editor\development\victorybplibrary\Module.VictoryBPLibrary.gen.1_of_2.cpp" />
+    <ClCompile Include="plugins\victoryplugin\intermediate\build\win64\ue4editor\development\victorybplibrary\Module.VictoryBPLibrary.gen.2_of_2.cpp" />
+    <ClCompile Include="plugins\victoryplugin\intermediate\build\win64\ue4editor\inc\victorybplibrary\TKMathFunctionLibrary.gen.cpp" />
+    <ClCompile Include="plugins\victoryplugin\intermediate\build\win64\ue4editor\inc\victorybplibrary\VictoryBPFunctionLibrary.gen.cpp" />
+    <ClCompile Include="plugins\victoryplugin\intermediate\build\win64\ue4editor\inc\victorybplibrary\VictoryBPHTML.gen.cpp" />
+    <ClCompile Include="plugins\victoryplugin\intermediate\build\win64\ue4editor\inc\victorybplibrary\VictoryBPLibrary.init.gen.cpp" />
+    <ClCompile Include="plugins\victoryplugin\intermediate\build\win64\ue4editor\inc\victorybplibrary\VictoryISM.gen.cpp" />
+    <ClCompile Include="plugins\victoryplugin\intermediate\build\win64\ue4editor\inc\victorybplibrary\VictoryPC.gen.cpp" />
+    <ClCompile Include="plugins\victoryplugin\intermediate\build\win64\ue4editor\inc\victorybplibrary\VictoryTMapComp.gen.cpp" />
+    <ClCompile Include="plugins\victoryplugin\source\victorybplibrary\private\TKMathFunctionLibrary.cpp" />
+    <ClCompile Include="plugins\victoryplugin\source\victorybplibrary\private\VictoryBPFunctionLibrary.cpp" />
+    <ClCompile Include="plugins\victoryplugin\source\victorybplibrary\private\VictoryBPFunctionLibrary_WinOS.cpp" />
+    <ClCompile Include="plugins\victoryplugin\source\victorybplibrary\private\VictoryBPHTML.cpp" />
+    <ClCompile Include="plugins\victoryplugin\source\victorybplibrary\private\VictoryBPLibrary.cpp" />
+    <ClCompile Include="plugins\victoryplugin\source\victorybplibrary\public\VictoryISM.cpp" />
+    <ClCompile Include="plugins\victoryplugin\source\victorybplibrary\public\VictoryPC.cpp" />
+    <ClCompile Include="plugins\victoryplugin\source\victorybplibrary\public\VictoryTMapComp.cpp" />
+    <ClCompile Include="plugins\ziputility-ue4\intermediate\build\win64\ue4editor\development\windowsfileutility\Module.WindowsFileUtility.cpp" />
+    <ClCompile Include="plugins\ziputility-ue4\intermediate\build\win64\ue4editor\development\windowsfileutility\Module.WindowsFileUtility.gen.cpp" />
+    <ClCompile Include="plugins\ziputility-ue4\intermediate\build\win64\ue4editor\development\ziputility\Module.ZipUtility.cpp" />
+    <ClCompile Include="plugins\ziputility-ue4\intermediate\build\win64\ue4editor\development\ziputility\Module.ZipUtility.gen.cpp" />
+    <ClCompile Include="plugins\ziputility-ue4\intermediate\build\win64\ue4editor\inc\windowsfileutility\WFUFileListInterface.gen.cpp" />
+    <ClCompile Include="plugins\ziputility-ue4\intermediate\build\win64\ue4editor\inc\windowsfileutility\WFUFileListLambdaDelegate.gen.cpp" />
+    <ClCompile Include="plugins\ziputility-ue4\intermediate\build\win64\ue4editor\inc\windowsfileutility\WFUFolderWatchInterface.gen.cpp" />
+    <ClCompile Include="plugins\ziputility-ue4\intermediate\build\win64\ue4editor\inc\windowsfileutility\WFUFolderWatchLambdaDelegate.gen.cpp" />
+    <ClCompile Include="plugins\ziputility-ue4\intermediate\build\win64\ue4editor\inc\windowsfileutility\WindowsFileUtility.init.gen.cpp" />
+    <ClCompile Include="plugins\ziputility-ue4\intermediate\build\win64\ue4editor\inc\windowsfileutility\WindowsFileUtilityFunctionLibrary.gen.cpp" />
+    <ClCompile Include="plugins\ziputility-ue4\intermediate\build\win64\ue4editor\inc\ziputility\ZipFileFunctionInternalCallback.gen.cpp" />
+    <ClCompile Include="plugins\ziputility-ue4\intermediate\build\win64\ue4editor\inc\ziputility\ZipFileFunctionLibrary.gen.cpp" />
+    <ClCompile Include="plugins\ziputility-ue4\intermediate\build\win64\ue4editor\inc\ziputility\ZipOperation.gen.cpp" />
+    <ClCompile Include="plugins\ziputility-ue4\intermediate\build\win64\ue4editor\inc\ziputility\ZipUtility.init.gen.cpp" />
+    <ClCompile Include="plugins\ziputility-ue4\intermediate\build\win64\ue4editor\inc\ziputility\ZipUtilityInterface.gen.cpp" />
+    <ClCompile Include="plugins\ziputility-ue4\intermediate\build\win64\ue4editor\inc\ziputility\ZULambdaDelegate.gen.cpp" />
+    <ClCompile Include="plugins\ziputility-ue4\source\windowsutility\private\WFUFileListInterface.cpp" />
+    <ClCompile Include="plugins\ziputility-ue4\source\windowsutility\private\WFUFileListLambdaDelegate.cpp" />
+    <ClCompile Include="plugins\ziputility-ue4\source\windowsutility\private\WFUFolderWatchInterface.cpp" />
+    <ClCompile Include="plugins\ziputility-ue4\source\windowsutility\private\WFUFolderWatchLambdaDelegate.cpp" />
+    <ClCompile Include="plugins\ziputility-ue4\source\windowsutility\private\WFULambdaRunnable.cpp" />
+    <ClCompile Include="plugins\ziputility-ue4\source\windowsutility\private\WindowsFileUtility.cpp" />
+    <ClCompile Include="plugins\ziputility-ue4\source\windowsutility\private\WindowsFileUtilityFunctionLibrary.cpp" />
+    <ClCompile Include="plugins\ziputility-ue4\source\ziputility\private\SevenZipCallbackHandler.cpp" />
+    <ClCompile Include="plugins\ziputility-ue4\source\ziputility\private\ZipFileFunctionInternalCallback.cpp" />
+    <ClCompile Include="plugins\ziputility-ue4\source\ziputility\private\ZipFileFunctionLibrary.cpp" />
+    <ClCompile Include="plugins\ziputility-ue4\source\ziputility\private\ZipOperation.cpp" />
+    <ClCompile Include="plugins\ziputility-ue4\source\ziputility\private\ZipUtilityInterface.cpp" />
+    <ClCompile Include="plugins\ziputility-ue4\source\ziputility\private\ZipUtilityPlugin.cpp" />
+    <ClCompile Include="plugins\ziputility-ue4\source\ziputility\private\ZULambdaDelegate.cpp" />
+    <ClCompile Include="source\mediocremapassistant2\BeatSaberEditor.cpp" />
+    <ClCompile Include="source\mediocremapassistant2\BPFileIO.cpp" />
+    <ClCompile Include="source\mediocremapassistant2\ColorConverter.cpp" />
+    <ClCompile Include="source\mediocremapassistant2\FileDownloader.cpp" />
+    <ClCompile Include="source\mediocremapassistant2\MMServerRequest.cpp" />
+    <ClCompile Include="source\mediocremapassistant2\RegReader.cpp" />
+    <ClCompile Include="source\mediocremapassistant2\RenderWaveform.cpp" />
+    <ClCompile Include="source\mediocremapassistant2\Updater.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="intermediate\build\win64\ue4editor\development\mediocremapassistant2\Definitions.MediocreMapAssistant2.h" />
+    <ClInclude Include="intermediate\build\win64\ue4editor\inc\mediocremapassistant2\BPFileIO.generated.h" />
+    <ClInclude Include="intermediate\build\win64\ue4editor\inc\mediocremapassistant2\ColorConverter.generated.h" />
+    <ClInclude Include="intermediate\build\win64\ue4editor\inc\mediocremapassistant2\FileDownloader.generated.h" />
+    <ClInclude Include="intermediate\build\win64\ue4editor\inc\mediocremapassistant2\MediocreMapAssistant2Classes.h" />
+    <ClInclude Include="intermediate\build\win64\ue4editor\inc\mediocremapassistant2\MMServerRequest.generated.h" />
+    <ClInclude Include="intermediate\build\win64\ue4editor\inc\mediocremapassistant2\RegReader.generated.h" />
+    <ClInclude Include="intermediate\build\win64\ue4editor\inc\mediocremapassistant2\RenderWaveform.generated.h" />
+    <ClInclude Include="intermediate\build\win64\ue4editor\inc\mediocremapassistant2\Updater.generated.h" />
+    <ClInclude Include="plugins\discordrpc\intermediate\build\win64\ue4editor\development\discordrpc\Definitions.DiscordRpc.h" />
+    <ClInclude Include="plugins\discordrpc\intermediate\build\win64\ue4editor\inc\discordrpc\DiscordRpcBlueprint.generated.h" />
+    <ClInclude Include="plugins\discordrpc\intermediate\build\win64\ue4editor\inc\discordrpc\DiscordRpcClasses.h" />
+    <ClInclude Include="plugins\discordrpc\source\discordrpc\private\DiscordRpcPrivatePCH.h" />
+    <ClInclude Include="plugins\discordrpc\source\discordrpc\public\DiscordRpc.h" />
+    <ClInclude Include="plugins\discordrpc\source\discordrpc\public\DiscordRpcBlueprint.h" />
+    <ClInclude Include="plugins\discordrpc\source\thirdparty\discordrpclibrary\include\discord_register.h" />
+    <ClInclude Include="plugins\discordrpc\source\thirdparty\discordrpclibrary\include\discord_rpc.h" />
+    <ClInclude Include="plugins\exisoundvis\intermediate\build\win64\ue4editor\development\exisoundvis\Definitions.eXiSoundVis.h" />
+    <ClInclude Include="plugins\exisoundvis\intermediate\build\win64\ue4editor\inc\exisoundvis\eXiSoundVisClasses.h" />
+    <ClInclude Include="plugins\exisoundvis\intermediate\build\win64\ue4editor\inc\exisoundvis\SoundVisComponent.generated.h" />
+    <ClInclude Include="plugins\exisoundvis\source\exisoundvis\private\eXiSoundVisPrivatePCH.h" />
+    <ClInclude Include="plugins\exisoundvis\source\exisoundvis\public\AudioDecompressWorker.h" />
+    <ClInclude Include="plugins\exisoundvis\source\exisoundvis\public\eXiSoundVis.h" />
+    <ClInclude Include="plugins\exisoundvis\source\exisoundvis\public\SoundVisComponent.h" />
+    <ClInclude Include="plugins\pluginpackaged\intermediate\build\win64\ue4editor\development\victoryumg\Definitions.VictoryUMG.h" />
+    <ClInclude Include="plugins\pluginpackaged\intermediate\build\win64\ue4editor\inc\victoryumg\JoyColorWheel.generated.h" />
+    <ClInclude Include="plugins\pluginpackaged\intermediate\build\win64\ue4editor\inc\victoryumg\VictoryUMGClasses.h" />
+    <ClInclude Include="plugins\pluginpackaged\source\victoryumg\private\VictoryUMGPrivatePCH.h" />
+    <ClInclude Include="plugins\pluginpackaged\source\victoryumg\public\JoyColorWheel.h" />
+    <ClInclude Include="plugins\pluginpackaged\source\victoryumg\public\SJoyColorPicker.h" />
+    <ClInclude Include="plugins\socketer\intermediate\build\win64\ue4editor\development\socketer\Definitions.Socketer.h" />
+    <ClInclude Include="plugins\socketer\intermediate\build\win64\ue4editor\inc\socketer\Socket.generated.h" />
+    <ClInclude Include="plugins\socketer\intermediate\build\win64\ue4editor\inc\socketer\SocketerBPLibrary.generated.h" />
+    <ClInclude Include="plugins\socketer\intermediate\build\win64\ue4editor\inc\socketer\SocketerClasses.h" />
+    <ClInclude Include="plugins\socketer\source\socketer\public\Socket.h" />
+    <ClInclude Include="plugins\socketer\source\socketer\public\Socketer.h" />
+    <ClInclude Include="plugins\socketer\source\socketer\public\SocketerBPLibrary.h" />
+    <ClInclude Include="plugins\victoryplugin\intermediate\build\win64\ue4editor\development\victorybplibrary\Definitions.VictoryBPLibrary.h" />
+    <ClInclude Include="plugins\victoryplugin\intermediate\build\win64\ue4editor\inc\victorybplibrary\TKMathFunctionLibrary.generated.h" />
+    <ClInclude Include="plugins\victoryplugin\intermediate\build\win64\ue4editor\inc\victorybplibrary\VictoryBPFunctionLibrary.generated.h" />
+    <ClInclude Include="plugins\victoryplugin\intermediate\build\win64\ue4editor\inc\victorybplibrary\VictoryBPHTML.generated.h" />
+    <ClInclude Include="plugins\victoryplugin\intermediate\build\win64\ue4editor\inc\victorybplibrary\VictoryBPLibraryClasses.h" />
+    <ClInclude Include="plugins\victoryplugin\intermediate\build\win64\ue4editor\inc\victorybplibrary\VictoryISM.generated.h" />
+    <ClInclude Include="plugins\victoryplugin\intermediate\build\win64\ue4editor\inc\victorybplibrary\VictoryPC.generated.h" />
+    <ClInclude Include="plugins\victoryplugin\intermediate\build\win64\ue4editor\inc\victorybplibrary\VictoryTMapComp.generated.h" />
+    <ClInclude Include="plugins\victoryplugin\source\victorybplibrary\private\VictoryBPLibraryPrivatePCH.h" />
+    <ClInclude Include="plugins\victoryplugin\source\victorybplibrary\public\TKMathFunctionLibrary.h" />
+    <ClInclude Include="plugins\victoryplugin\source\victorybplibrary\public\VictoryBPFunctionLibrary.h" />
+    <ClInclude Include="plugins\victoryplugin\source\victorybplibrary\public\VictoryBPHTML.h" />
+    <ClInclude Include="plugins\victoryplugin\source\victorybplibrary\public\VictoryBPLibrary.h" />
+    <ClInclude Include="plugins\victoryplugin\source\victorybplibrary\public\VictoryISM.h" />
+    <ClInclude Include="plugins\victoryplugin\source\victorybplibrary\public\VictoryPC.h" />
+    <ClInclude Include="plugins\victoryplugin\source\victorybplibrary\public\VictoryTMapComp.h" />
+    <ClInclude Include="plugins\ziputility-ue4\intermediate\build\win64\ue4editor\development\windowsfileutility\Definitions.WindowsFileUtility.h" />
+    <ClInclude Include="plugins\ziputility-ue4\intermediate\build\win64\ue4editor\development\ziputility\Definitions.ZipUtility.h" />
+    <ClInclude Include="plugins\ziputility-ue4\intermediate\build\win64\ue4editor\inc\windowsfileutility\WFUFileListInterface.generated.h" />
+    <ClInclude Include="plugins\ziputility-ue4\intermediate\build\win64\ue4editor\inc\windowsfileutility\WFUFileListLambdaDelegate.generated.h" />
+    <ClInclude Include="plugins\ziputility-ue4\intermediate\build\win64\ue4editor\inc\windowsfileutility\WFUFolderWatchInterface.generated.h" />
+    <ClInclude Include="plugins\ziputility-ue4\intermediate\build\win64\ue4editor\inc\windowsfileutility\WFUFolderWatchLambdaDelegate.generated.h" />
+    <ClInclude Include="plugins\ziputility-ue4\intermediate\build\win64\ue4editor\inc\windowsfileutility\WindowsFileUtilityClasses.h" />
+    <ClInclude Include="plugins\ziputility-ue4\intermediate\build\win64\ue4editor\inc\windowsfileutility\WindowsFileUtilityFunctionLibrary.generated.h" />
+    <ClInclude Include="plugins\ziputility-ue4\intermediate\build\win64\ue4editor\inc\ziputility\ZipFileFunctionInternalCallback.generated.h" />
+    <ClInclude Include="plugins\ziputility-ue4\intermediate\build\win64\ue4editor\inc\ziputility\ZipFileFunctionLibrary.generated.h" />
+    <ClInclude Include="plugins\ziputility-ue4\intermediate\build\win64\ue4editor\inc\ziputility\ZipOperation.generated.h" />
+    <ClInclude Include="plugins\ziputility-ue4\intermediate\build\win64\ue4editor\inc\ziputility\ZipUtilityClasses.h" />
+    <ClInclude Include="plugins\ziputility-ue4\intermediate\build\win64\ue4editor\inc\ziputility\ZipUtilityInterface.generated.h" />
+    <ClInclude Include="plugins\ziputility-ue4\intermediate\build\win64\ue4editor\inc\ziputility\ZULambdaDelegate.generated.h" />
+    <ClInclude Include="plugins\ziputility-ue4\source\windowsutility\private\WFUFileListLambdaDelegate.h" />
+    <ClInclude Include="plugins\ziputility-ue4\source\windowsutility\private\WFUFolderWatchLambdaDelegate.h" />
+    <ClInclude Include="plugins\ziputility-ue4\source\windowsutility\private\WindowsFileUtilityPrivatePCH.h" />
+    <ClInclude Include="plugins\ziputility-ue4\source\windowsutility\public\IWindowsFileUtility.h" />
+    <ClInclude Include="plugins\ziputility-ue4\source\windowsutility\public\WFUFileListInterface.h" />
+    <ClInclude Include="plugins\ziputility-ue4\source\windowsutility\public\WFUFolderWatchInterface.h" />
+    <ClInclude Include="plugins\ziputility-ue4\source\windowsutility\public\WFULambdaRunnable.h" />
+    <ClInclude Include="plugins\ziputility-ue4\source\windowsutility\public\WindowsFileUtilityFunctionLibrary.h" />
+    <ClInclude Include="plugins\ziputility-ue4\source\ziputility\private\ZipFileFunctionInternalCallback.h" />
+    <ClInclude Include="plugins\ziputility-ue4\source\ziputility\private\ZipUtilityPrivatePCH.h" />
+    <ClInclude Include="plugins\ziputility-ue4\source\ziputility\private\ZULambdaDelegate.h" />
+    <ClInclude Include="plugins\ziputility-ue4\source\ziputility\public\SevenZipCallbackHandler.h" />
+    <ClInclude Include="plugins\ziputility-ue4\source\ziputility\public\ZipFileFunctionLibrary.h" />
+    <ClInclude Include="plugins\ziputility-ue4\source\ziputility\public\ZipOperation.h" />
+    <ClInclude Include="plugins\ziputility-ue4\source\ziputility\public\ZipUtilityInterface.h" />
+    <ClInclude Include="plugins\ziputility-ue4\source\ziputility\public\ZipUtilityPlugin.h" />
+    <ClInclude Include="plugins\ziputility-ue4\thirdparty\7zpp\include\7zpp.h" />
+    <ClInclude Include="plugins\ziputility-ue4\thirdparty\7zpp\include\CompressionFormat.h" />
+    <ClInclude Include="plugins\ziputility-ue4\thirdparty\7zpp\include\CompressionLevel.h" />
+    <ClInclude Include="plugins\ziputility-ue4\thirdparty\7zpp\include\Enum.h" />
+    <ClInclude Include="plugins\ziputility-ue4\thirdparty\7zpp\include\FileInfo.h" />
+    <ClInclude Include="plugins\ziputility-ue4\thirdparty\7zpp\include\ListCallback.h" />
+    <ClInclude Include="plugins\ziputility-ue4\thirdparty\7zpp\include\ProgressCallback.h" />
+    <ClInclude Include="plugins\ziputility-ue4\thirdparty\7zpp\include\SevenString.h" />
+    <ClInclude Include="plugins\ziputility-ue4\thirdparty\7zpp\include\SevenZipArchive.h" />
+    <ClInclude Include="plugins\ziputility-ue4\thirdparty\7zpp\include\SevenZipCompressor.h" />
+    <ClInclude Include="plugins\ziputility-ue4\thirdparty\7zpp\include\SevenZipException.h" />
+    <ClInclude Include="plugins\ziputility-ue4\thirdparty\7zpp\include\SevenZipExtractor.h" />
+    <ClInclude Include="plugins\ziputility-ue4\thirdparty\7zpp\include\SevenZipLibrary.h" />
+    <ClInclude Include="plugins\ziputility-ue4\thirdparty\7zpp\include\SevenZipLister.h" />
+    <ClInclude Include="source\mediocremapassistant2\BeatSaberEditor.h" />
+    <ClInclude Include="source\mediocremapassistant2\BPFileIO.h" />
+    <ClInclude Include="source\mediocremapassistant2\ColorConverter.h" />
+    <ClInclude Include="source\mediocremapassistant2\FileDownloader.h" />
+    <ClInclude Include="source\mediocremapassistant2\MMServerRequest.h" />
+    <ClInclude Include="source\mediocremapassistant2\RegReader.h" />
+    <ClInclude Include="source\mediocremapassistant2\RenderWaveform.h" />
+    <ClInclude Include="source\mediocremapassistant2\Updater.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="intermediate\assetregistrycache\2657c409.bin" />
+    <None Include="intermediate\assetregistrycache\6d9c2bb1.bin" />
+    <None Include="intermediate\assetregistrycache\866581fd.bin" />
+    <None Include="intermediate\assetregistrycache\96f7d005.bin" />
+    <None Include="intermediate\assetregistrycache\cd34a47f.bin" />
+    <None Include="intermediate\build\ActionHistory.bin" />
+    <None Include="intermediate\build\win64\mediocremapassistant2editor\DependencyCache.bin" />
+    <None Include="intermediate\build\win64\mediocremapassistant2editor\FlatCPPIncludes.bin" />
+    <None Include="intermediate\CachedAssetRegistry.bin" />
+    <None Include="intermediate\reimportcache\3688439234.bin" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
